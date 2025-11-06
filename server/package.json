@@ -4,8 +4,10 @@
   "description": "Backend for JM Restaurant & Travels",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js",
+    "start:prod": "node index.js",
+    "dev": "nodemon index.js",
+    "postinstall": "cd ../client && npm install && npm run build"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
