@@ -6,7 +6,7 @@ require('dotenv').config();
 const seedData = async () => {
   try {
     // Connect to MongoDB
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/jm-business');
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://jm-business:UwR8802k5JDenv0j@cluster0.j72iqnx.mongodb.net/?appName=Cluster0');
     console.log('✅ Connected to MongoDB for seeding');
 
     // Clear existing data
