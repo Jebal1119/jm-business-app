@@ -7,7 +7,7 @@
     "start": "node index.js",
     "start:prod": "node index.js",
     "dev": "nodemon index.js",
-    "postinstall": "cd ../client && npm install && npm run build"
+    "postinstall": "if [ -d ../client ]; then cd ../client && npm install && npm run build; fi || echo 'Client directory not found, skipping client build.'"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
